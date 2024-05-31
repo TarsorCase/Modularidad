@@ -1,3 +1,4 @@
+#include "exercise_8_v.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -6,7 +7,7 @@ using namespace std;
 
 vector<string> mes(int next, vector <string> month);
 
-int main(){
+void exercise_8_v(){
   vector<string> line(31, " ");
   vector<string> dump;
   string command;
@@ -47,7 +48,6 @@ int main(){
     }
     cout << itereator << yes << "\n";
   }
-  return 0;
 }
 
 vector<string> mes(int next, vector <string> month){

@@ -37,6 +37,15 @@
 #include "exercise_17_2.h"
 #include "exercise_18_19_2.h"
 
+#include "exercise_3_v.h"
+#include "exercise_4_v.h"
+#include "exercise_5_v.h"
+#include "exercise_6_v.h"
+#include "exercise_7_v.h"
+#include "exercise_8_v.h"
+#include "exercise_9_v.h"
+#include "exercise_10_v.h"
+
 #include "board.h"
 
 using namespace std;
@@ -44,7 +53,7 @@ using namespace std;
 void ejecutarPrimerTrabajo() {
     int choice;
     do {
-        cout << "Seleccione el ejercicio a ejecutar del primer trabajo (1-16), o 0 para salir: ";
+        cout << "\n\nSeleccione el ejercicio a ejecutar del primer trabajo (1-16), o 0 para salir: \n";
         cin >> choice;
 
         switch (choice) {
@@ -92,7 +101,7 @@ void ejecutarPrimerTrabajo() {
 void ejecutarSegundoTrabajo() {
     int choice;
     while (true) {
-        cout << "Ingrese el número del ejercicio que desea ejecutar del segundo trabajo (1-19) o 0 para salir: ";
+        cout << "\n\nIngrese el número del ejercicio que desea ejecutar del segundo trabajo (1-19) o 0 para salir: \n";
         cin >> choice;
 
         if (choice == 0) {
@@ -157,7 +166,7 @@ void ejecutarBoardFunciones() {
 void vectores() {
     int choice;
     while (true) {
-        cout << "Ingrese el número del ejercicio que desea ejecutar del trabajo de vectores (3-9) o 0 para salir: ";
+        cout << "\n\nIngrese el número del ejercicio que desea ejecutar del trabajo de vectores (3-10) o 0 para salir: \n";
         cin >> choice;
 
         if (choice == 0) {
@@ -165,55 +174,31 @@ void vectores() {
         }
 
         switch (choice) {
-            case 1: exercise_1_2(); break;
-            case 2: exercise_2_2(); break;
-            case 3: exercise_3_2(); break;
-            case 4: exercise_4_2(); break;
-            case 5: exercise_5_2(); break;
-            case 6: cout << exercise_6_2() << endl; break;
-            case 7: exercise_7_2(); break;
-            case 8: exercise_8_2(); break;
-            case 9: exercise_9_2(); break;
-            case 10: {
-                int a, b;
-                cin >> a >> b;
-                cout << exercise_10_2(a, b) << endl;
-                break;
-            }
-            case 11: exercise_11_2(); break;
-            case 12: exercise_12_2(); break;
-            case 13: {
-                int n, k;
-                cin >> n >> k;
-                cout << exercise_13_2(n, k) << endl;
-                break;
-            }
-            case 14: {
-                int u;
-                cin >> u;
-                cout << exercise_14_2(u) << endl;
-                break;
-            }
-            case 15: exercise_15_2(); break;
-            case 16: exercise_16_2(); break;
-            case 17: exercise_17_2(); break;
-            case 18:
-            case 19: exercise_18_19_2(); break;
+            case 3: exercise_3_v(); break;
+            case 4: exercise_4_v(); break;
+            case 5: exercise_5_v(); break;
+            case 6: exercise_6_v(); break;
+            case 7: exercise_7_v(); break;
+            case 8: exercise_8_v(); break;
+            case 9: exercise_9_v(); break;
+            case 10: exercise_10_v(); break;
             default: cout << "Opción no válida" << endl; break;
         }
     }
 }
+
 int main() {
     int trabajoChoice;
 
     do {
-        cout << "Seleccione el trabajo a ejecutar (1 para el primer trabajo, 2 para el segundo trabajo, 3 para las funciones de board, 0 para salir): ";
+        cout << "\n\nSeleccione el trabajo a ejecutar:\n1 para el primer trabajo\n2 para el segundo trabajo\n3 para las funciones de board\n4 para los ejercicios de vectores del 3-10\n0 para salir: \n";
         cin >> trabajoChoice;
 
         switch (trabajoChoice) {
             case 1: ejecutarPrimerTrabajo(); break;
             case 2: ejecutarSegundoTrabajo(); break;
             case 3: ejecutarBoardFunciones(); break;
+            case 4: vectores(); break;
             case 0: cout << "Saliendo..." << endl; break;
             default: cout << "Opción inválida. Intente de nuevo." << endl;
         }

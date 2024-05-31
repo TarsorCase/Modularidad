@@ -1,9 +1,10 @@
+#include "exercise_10_v.h"
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
-int main() {
+void exercise_10_v() {
     vector<int> heights1 = {1, 1, 4, 2, 1, 3};
     vector<int> expected1 = {1, 1, 1, 2, 3, 4};
     int count1 = 0;
@@ -33,7 +34,5 @@ int main() {
         }
     }
     cout << "Salida 3: " << count3 << endl;
-
-    return 0;
 }
 

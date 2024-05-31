@@ -1,9 +1,10 @@
+#include "exercise_9_v.h"
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
-int main() {
+void exercise_9_v() {
     vector<int> salary1 = {4000, 3000, 1000, 2000};
     int min_salary1 = salary1[0];
     int max_salary1 = salary1[0];
@@ -45,7 +46,5 @@ int main() {
 
     double average2 = (total2 - min_salary2 - max_salary2) / static_cast<double>(salary2.size() - 2);
     cout << "Salida 2: " << average2 << endl;
-
-    return 0;
 }
 

@@ -1,8 +1,9 @@
+#include "exercise_5_v.h"
 #include <vector>
 #include <iostream>
 using namespace std;
 
-int main(){  
+void exercise_5_v(){  
   vector<vector<int>> matriz4x4(4, vector<int>(4));
   for(auto &yes : matriz4x4){
     for(auto &no : yes){

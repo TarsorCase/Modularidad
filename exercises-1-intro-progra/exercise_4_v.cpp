@@ -1,8 +1,9 @@
+#include "exercise_4_v.h"
 #include <vector>
 #include <iostream>
 using namespace std;
 
-int main(){  
+void exercise_4_v(){  
   vector<vector<int>> matriz = {
         {32, 5, 18, 24, 11},
         {3, 14, 29, 22, 7},

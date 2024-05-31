@@ -1,9 +1,9 @@
-#include <algorithm>
+#include "exercise_6_v.h"
 #include <vector>
 #include <iostream>
 using namespace std;
 
-int main(){  
+void exercise_6_v(){  
   int n;
   cin >> n;
   vector <int> days(n);

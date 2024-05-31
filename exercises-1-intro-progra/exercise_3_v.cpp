@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-void exercise_19() {
+void exercise_3_v() {
     std::vector<std::vector<int>> matriz = {
         {32, 5, 18, 24, 11},
         {3, 14, 29, 22, 7},

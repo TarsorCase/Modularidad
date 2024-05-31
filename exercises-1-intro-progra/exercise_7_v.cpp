@@ -1,3 +1,4 @@
+#include "exercise_7_v.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -5,7 +6,7 @@
 #include <algorithm>
 using namespace std;
 
-int main(){
+void exercise_7_v(){
   vector<int> line;
   vector<int> worry;
   string command;
@@ -37,5 +38,4 @@ int main(){
   for(const auto &yes : worry){
     cout << yes << " ";
   }
-  return 0;
 }
